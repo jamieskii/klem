@@ -12,8 +12,8 @@
   --white: #ffffff;
   --shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 
-  --title-font: "Barlow Condensed", Impact, sans-serif;
-  --body-font: "Poppins", Arial, sans-serif;
+  --title-font: "Barlow Condensed", sans-serif;
+  --body-font: "Poppins", sans-serif;
 }
 
 * {
@@ -26,7 +26,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--page-gray);
+  background: var(--white);
   color: var(--black);
   font-family: var(--body-font);
 }
@@ -41,15 +41,17 @@ a {
   text-decoration: none;
 }
 
-/* HEADER */
+
 
 .site-header {
-  background: var(--page-gray);
-  padding: 22px 34px;
-  min-height: 125px;
+  height: 125px;
+  padding: 28px 42px;
+  background: var(--white);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
+  position: relative;
+  z-index: 20;
 }
 
 .logo {
@@ -75,7 +77,6 @@ a {
   background: transparent;
 }
 
-/* INTRO BANNER */
 
 .intro-banner {
   background: var(--green);
@@ -90,7 +91,7 @@ a {
   margin: 0;
   font-family: var(--title-font);
   font-size: clamp(3.5rem, 5vw, 5rem);
-  font-weight: 900;
+  font-weight: 800;
   line-height: 0.9;
 }
 
@@ -98,7 +99,7 @@ a {
   margin: 16px 0 0;
   font-size: clamp(1.2rem, 2vw, 1.5rem);
   line-height: 1.4;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .pink-line {
@@ -123,7 +124,7 @@ a {
   width: clamp(90px, 13vw, 150px);
 }
 
-/* FORM SECTION */
+
 
 .form-section {
   background: var(--cream);
@@ -133,11 +134,11 @@ a {
 .form-group h2,
 .stories-section h2,
 .cta-text h2 {
-  margin: 0 0 16px;
+  margin: 0 0 38px;
   font-family: var(--title-font);
-  font-size: clamp(3rem, 4.5vw, 4.5rem);
-  font-weight: 900;
-  line-height: 0.95;
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  font-weight: 800;
+  line-height: 1;
 }
 
 .form-group.full {
@@ -244,7 +245,7 @@ textarea::placeholder {
 
 .button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
 .button-yellow {
@@ -256,10 +257,8 @@ textarea::placeholder {
   margin-top: 20px;
 }
 
-/* STORIES */
-
 .stories-section {
-  background: var(--page-gray);
+  background: var(--white);
   padding: 38px 34px 46px;
 }
 
@@ -344,7 +343,6 @@ textarea::placeholder {
   border-radius: 50%;
 }
 
-/* CTA */
 
 .cta-banner {
   background: var(--blue);
@@ -362,7 +360,7 @@ textarea::placeholder {
   position: absolute;
   width: 88px;
   height: 88px;
-  background: var(--pink);
+  background: var(--blue);
   border-radius: 50%;
   left: -40px;
   top: -18px;
@@ -378,9 +376,20 @@ textarea::placeholder {
   top: 28px;
 }
 
+.cta-yellow-dot {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  background: var(--pink);
+  border-radius: 50%;
+  left: -40px;
+  top: -18px;
+}
+
 .cta-text {
   position: relative;
   z-index: 2;
+  padding-left: 100px;
 }
 
 .cta-text h2 {
@@ -390,7 +399,7 @@ textarea::placeholder {
 }
 
 .cta-text .pink-line {
-  width: 460px;
+  width: 700px;
   max-width: 100%;
   height: 4px;
 }
@@ -401,7 +410,7 @@ textarea::placeholder {
 }
 
 .cta-icon img {
-    width: 82px;
+  width: 82px;
 }
 
 
@@ -410,7 +419,460 @@ textarea::placeholder {
   min-width: 280px;
 }
 
-/* RESPONSIVE */
+.resources-page {
+  --resources-green: #63c2a8;
+  --resources-pink: #e85fa8;
+  --resources-purple: #9b84cd;
+  --resources-blue: #243f9f;
+  --resources-yellow: #ffd400;
+  --resources-cream: #f4efe6;
+}
+
+.resources-page .resources-hero {
+  background: var(--resources-purple);
+  align-items: center;
+}
+
+.resources-page .resources-small-text {
+  margin-top: 18px;
+  max-width: 860px;
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.35;
+  font-weight: 300;
+}
+
+.resources-page .intro-icon img {
+  width: 130px;
+  height: auto;
+}
+
+
+
+
+
+.dilemmas {
+  background: var(--cream);
+  padding-top: 1vw;
+}
+
+.titels {
+  margin: 0 0 38px;
+  
+  font-family: var(--title-font);
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.dilemma-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 34px;
+  margin-bottom: 42px;
+}
+
+.dilemma-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.2s ease;
+}
+
+.dilemma-grid img:hover {
+  transform: rotate(-1deg) scale(1.02);
+}
+
+.resources-page .dilemmas {
+   background: var(--cream);
+  padding: 38px 34px 46px;
+}
+
+.resources-page .dilemmas .titels {
+  margin-left: 0 ;
+  padding-left: 0 ;
+}
+
+
+
+
+
+
+.resources-explanation {
+  padding-top: 8px;
+  padding-bottom: 70px;
+}
+
+.resources-explanation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 64px;
+}
+
+.resources-explanation-item {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 18px;
+}
+
+.resources-explanation-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.resources-dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+.resources-dot.green {
+  background: var(--resources-green);
+}
+
+.resources-dot.pink {
+  background: var(--resources-pink);
+}
+
+.resources-dot.blue {
+  background: var(--resources-blue);
+}
+
+
+
+.resources-page .resources-pink-cta {
+  background: var(--resources-pink);
+  border-top: 0;
+}
+
+.resources-page .resources-pink-cta .pink-line {
+  background: var(--resources-purple);
+}
+
+.resources-page .resources-pink-cta .cta-icon img {
+  width: 84px;
+}
+
+
+
+.resources-block {
+  padding-top: 34px;
+  padding-bottom: 20px;
+}
+
+.resources-heading {
+  display: grid;
+  grid-template-columns: 54px 360px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.resources-heading>span {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.resources-heading h2 {
+  margin: 0;
+}
+
+.resources-heading p {
+  margin: 0;
+  font-size: clamp(1rem, 1.5vw, 1.35rem);
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.resources-heading.student>span {
+  background: var(--resources-green);
+}
+
+.resources-heading.teacher>span {
+  background: var(--resources-pink);
+}
+
+.resources-heading.school>span {
+  background: var(--resources-blue);
+}
+
+.resources-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  padding-left: 76px;
+}
+
+.resources-card {
+  min-height: 230px;
+  border: 4px solid;
+  border-radius: 22px;
+  background: var(--white);
+  padding: 26px 30px 22px;
+}
+
+.resources-card h3 {
+  margin: 0 0 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.resources-card p {
+  margin: 0 0 18px;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  font-weight: 300;
+}
+
+.resources-card a {
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.resources-card a:hover {
+  text-decoration: underline;
+}
+
+.resources-card-grid.student .resources-card {
+  border-color: var(--resources-green);
+}
+
+.resources-card-grid.student .resources-card a {
+  color: var(--resources-green);
+}
+
+.resources-card-grid.teacher .resources-card {
+  border-color: var(--resources-pink);
+}
+
+.resources-card-grid.teacher .resources-card a {
+  color: var(--resources-pink);
+}
+
+.resources-card-grid.school .resources-card {
+  border-color: var(--resources-blue);
+}
+
+.resources-card-grid.school .resources-card a {
+  color: var(--resources-blue);
+}
+
+.resources-page {
+  --resources-green: #63c2a8;
+  --resources-pink: #e85fa8;
+  --resources-purple: #9b84cd;
+  --resources-blue: #243f9f;
+  --resources-yellow: #ffd400;
+  --resources-cream: #f4efe6;
+}
+
+.resources-page .resources-hero {
+  background: var(--resources-purple);
+  align-items: center;
+}
+
+.resources-page .resources-small-text {
+  margin-top: 18px;
+  max-width: 860px;
+  font-size: 1rem;
+  line-height: 1.35;
+  font-weight: 300;
+}
+
+.resources-page .intro-icon img {
+  width: 130px;
+  height: auto;
+}
+
+/* Dilemma cards */
+
+.resources-dilemmas {
+  padding-bottom: 20px;
+}
+
+.resources-dilemma-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 7vw;
+}
+
+
+
+
+.resources-explanation {
+  padding-top: 8px;
+  padding-bottom: 70px;
+}
+
+.resources-explanation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 64px;
+}
+
+.resources-explanation-item {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.resources-explanation-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  font-weight: 300;
+}
+
+.resources-dot {
+  display: block;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+.resources-dot.green {
+  background: var(--resources-green);
+}
+
+.resources-dot.pink {
+  background: var(--resources-pink);
+}
+
+.resources-dot.blue {
+  background: var(--resources-blue);
+}
+
+
+
+.resources-page .resources-pink-cta {
+  background: var(--resources-pink);
+  border-top: 0;
+}
+
+.resources-page .resources-pink-cta .pink-line {
+  background: var(--green);
+}
+
+.resources-page .resources-pink-cta .cta-icon img {
+  width: 84px;
+}
+
+
+
+.resources-block {
+  padding-top: 34px;
+  padding-bottom: 20px;
+}
+
+.resources-heading {
+  display: grid;
+  grid-template-columns: 54px 360px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.resources-heading>span {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.resources-heading h2 {
+  margin: 0;
+}
+
+.resources-heading p {
+  margin: 0;
+  font-size: clamp(1rem, 1.5vw, 1.35rem);
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.resources-heading.student>span {
+  background: var(--resources-green);
+}
+
+.resources-heading.teacher>span {
+  background: var(--resources-pink);
+}
+
+.resources-heading.school>span {
+  background: var(--resources-blue);
+}
+
+.resources-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding-left: 76px;
+}
+
+.resources-card {
+  min-height: 165px;
+  border: 4px solid;
+  border-radius: 22px;
+  background: var(--white);
+  padding: 26px 30px 22px;
+}
+
+.resources-card h3 {
+  margin: 0 0 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.resources-card p {
+  margin: 0 0 18px;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  font-weight: 300;
+}
+
+.resources-card a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.resources-card a:hover {
+  text-decoration: underline;
+}
+
+.resources-card-grid.student .resources-card {
+  border-color: var(--resources-green);
+}
+
+.resources-card-grid.student .resources-card a {
+  color: var(--resources-green);
+}
+
+.resources-card-grid.teacher .resources-card {
+  border-color: var(--resources-pink);
+}
+
+.resources-card-grid.teacher .resources-card a {
+  color: var(--resources-pink);
+}
+
+.resources-card-grid.school .resources-card {
+  border-color: var(--resources-blue);
+}
+
+.resources-card-grid.school .resources-card a {
+  color: var(--resources-blue);
+}
+
 
 @media (max-width: 1100px) {
   .stories-grid {
@@ -429,45 +891,80 @@ textarea::placeholder {
   .cta-button {
     justify-self: start;
   }
+
+
+  .resources-page .dilemma-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .resources-explanation-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .resources-heading {
+    grid-template-columns: 54px 1fr;
+  }
+
+  .resources-heading p {
+    grid-column: 2;
+  }
+
+  .resources-card-grid {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    gap: 22px;
+  }
 }
 
 @media (max-width: 800px) {
   .site-header {
     align-items: center;
     min-height: auto;
+    height: auto;
+    padding: 22px 24px;
+  }
+
+
+  .logo {
+    width: 120px;
   }
 
   .menu-toggle {
     width: 42px;
     height: 32px;
+    border: 0;
+    background: transparent;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0;
+    cursor: pointer;
   }
 
   .menu-toggle span {
     display: block;
     height: 4px;
-    background: var(--black);
     border-radius: 999px;
+    background: var(--black);
   }
 
   .nav {
     position: absolute;
-    top: 100%;
     left: 0;
     right: 0;
+    top: 100%;
+    padding: 24px;
     background: var(--white);
+    border-top: 2px solid var(--black);
     flex-direction: column;
     align-items: flex-start;
     gap: 18px;
-    padding: 24px 34px;
     opacity: 0;
     pointer-events: none;
-    transform: translateY(-10px);
+    transform: translateY(-16px);
     transition: 0.2s ease;
-    z-index: 30;
+    z-index: 20;
   }
 
   .nav.is-open {
@@ -476,17 +973,65 @@ textarea::placeholder {
     transform: translateY(0);
   }
 
-  .intro-banner {
-    grid-template-columns: 1fr;
-    gap: 28px;
+  .intro-icon {
+    display: none;
+  }
+  
+  .titels {
+    padding-top: 20px ;
   }
 
-  .intro-icon {
-    justify-content: flex-start;
+  .cta-text .pink-line {
+    width: 280px;
+    max-width: 100%;
+    height: 4px;
+    
+  }
+  .cta-text {
+    padding-left: 0px;
+  }
+
+  .pink-line.short {
+    width: 280px;
+    max-width: 100%;
+  }
+
+  
+
+ 
+  .resources-page .dilemmas {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .resources-page .dilemma-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .resources-page .resources-pink-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .resources-page .resources-pink-cta .button {
+    width: 100%;
+  
+  }
+
+  .indeweg{
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background: var(--pink );
+  border-radius: 50%;
+  right: 28px;
+  top: 28px;
+  padding-right: 40px;
   }
 }
 
 @media (max-width: 600px) {
+
   .site-header,
   .intro-banner,
   .form-section,
@@ -527,5 +1072,33 @@ textarea::placeholder {
 
   .button {
     width: 100%;
+  }
+
+
+  .resources-page .resources-small-text {
+    font-size: 0.95rem;
+  }
+
+  .resources-page .dilemmas {
+    padding: 28px 22px 36px;
+  }
+
+  .resources-page .titels {
+    font-size: clamp(2.6rem, 11vw, 3.8rem);
+  }
+
+  .resources-heading {
+    grid-template-columns: 42px 1fr;
+    gap: 16px;
+  }
+
+  .resources-heading>span {
+    width: 38px;
+    height: 38px;
+  }
+
+  .resources-card {
+    min-height: auto;
+    padding: 22px;
   }
 }
