@@ -1,170 +1,178 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KLEM - Denk mee</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KLEM - Denk mee</title>
 
-  <link rel="stylesheet" href="../css/denk.css" />
+    <link rel="stylesheet" href="../css/denk.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+         <script src="../js/script.js" defer></script>
 </head>
+
 <body>
-  <header class="site-header">
-    <a href="/index.html" class="logo-link" aria-label="KLEM home">
-      <img src="../assets/logo.png" alt="KLEM" class="logo">
-    </a>
+    <header class="site-header">
+        <a href="../index.html" class="logo-link" aria-label="KLEM home">
+            <img src="../assets/logo.png" alt="KLEM" class="logo">
+        </a>
 
-    <button class="menu-toggle" aria-label="Menu openen">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+        <button class="menu-toggle" aria-label="Menu openen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-    <nav class="nav">
-      <a href="/index.html">Home</a>
-      <a href="../html/denk.html">Denk mee</a>
-      <a href="../html/resources.html">Recources &amp; Info</a>
-    </nav>
-  </header>
+        <nav class="nav">
+            <a href="../index.html">Home</a>
+            <a href="../html/denk.html">Denk mee</a>
+            <a href="../html/resources.html">Recources &amp; Info</a>
+        </nav>
+    </header>
 
-  <main>
-    <!-- Intro -->
-    <section class="intro-banner">
-      <div class="intro-text">
-        <h1>Denk mee</h1>
-        <span class="pink-line short"></span>
-        <p>
-          Waar loopt het onderwijs klem?<br>
-          Deel wat je ziet, ervaart of wat moet veranderen.
-        </p>
-      </div>
+    <main>
 
-      <div class="intro-icon">
-        <img src="../assets/brein.png" alt="Brein illustratie">
-      </div>
-    </section>
+        <section class="intro-banner">
+            <div class="intro-text">
+                <h1>Denk mee</h1>
+                <span class="pink-line short"></span>
+                <p>
+                    Waar loopt het onderwijs klem?<br>
+                    Deel wat je ziet, ervaart of wat moet veranderen.
+                </p>
+            </div>
 
-    <!-- Form section -->
-    <section class="form-section">
-      <div class="form-group full">
-        <h2>Het onderwijs zit klem omdat...</h2>
-        <textarea placeholder="Bijvoorbeeld: verplichte aanwezigheid bestaat en ik hierdoor over mijn grens heen blijf gaan"></textarea>
-      </div>
+            <div class="intro-icon">
+                <img src="../assets/brein.png" alt="Brein illustratie">
+            </div>
+        </section>
 
-      <div class="form-grid">
-        <div class="form-group">
-          <h2>Wat zou helpen?</h2>
-          <textarea class="small-textarea" placeholder="Jouw idee of suggestie..."></textarea>
 
-          
-        </div>
+        <section class="form-section">
+            <div class="form-group full">
+                <h2 class="titels">Het onderwijs zit klem omdat...</h2>
+                <textarea
+                    placeholder="Bijvoorbeeld: verplichte aanwezigheid bestaat en ik hierdoor over mijn grens heen blijf gaan"></textarea>
+            </div>
 
-        <div class="form-group select-group">
-          <h2>Waar val je onder?</h2>
-          <label for="occupation" class="field-label"></label>
-          <select id="occupation">
-            <option selected disabled>Kies wat past bij jou</option>
-            <option>Student</option>
-            <option>Docent</option>
-            <option>Onderwijs functie</option>
-          </select>
-          <button class="button button-yellow">
-            Deel je ervaring <span>→</span>
-          </button>
-          
-        </div>
-      </div>
-    </section>
+            <div class="form-grid">
+                <div class="form-group">
+                    <h2 class="titels">Wat zou helpen?</h2>
+                    <textarea class="small-textarea" placeholder="Jouw idee of suggestie..."></textarea>
 
-    <!-- Shared stories -->
-    <section class="stories-section">
-      <h2>Wat anderen delen</h2>
 
-      <div class="stories-grid">
-        <article class="story-card pink-card">
-          <div class="quote-mark quote-open">“</div>
+                </div>
 
-          <div class="story-content">
-            <p>
-              Ik zit klem omdat docenten
-              weigeren een online
-              alternatief te bieden als ik
-              niet fysiek aanwezig kan zijn
-            </p>
+                <div class="form-group select-group">
+                    <h2 class="titels"> Waar val je onder?</h2>
+                    <label for="occupation" class="field-label"></label>
+                    <select id="occupation">
+                        <option selected disabled>Kies wat past bij jou</option>
+                        <option>Student</option>
+                        <option>Docent</option>
+                        <option>Onderwijs functie</option>
+                    </select>
+                    <button class="button button-yellow">
+                        Deel je ervaring <span>→</span>
+                    </button>
 
-            <span class="story-role">Student</span>
-          </div>
+                </div>
+            </div>
+        </section>
 
-          <div class="story-footer">
-            <div class="quote-mark quote-close">”</div>
-            <img src="../assets/IMG_4236.jpg" alt="Portret student" class="story-avatar">
-          </div>
-        </article>
+        <!-- Shared stories -->
+        <section class="stories-section">
+            <h2 class="titels">Wat anderen delen</h2>
 
-        <article class="story-card purple-card">
-          <div class="quote-mark quote-open">“</div>
+            <div class="stories-grid">
+                <article class="story-card pink-card">
+                    <div class="quote-mark quote-open">“</div>
 
-          <div class="story-content">
-            <p>
-              Het onderwijs zit klem
-              omdat er altijd rekening
-              moet worden gehouden met
-              vaste regels.
-            </p>
+                    <div class="story-content">
+                        <p>
+                            Ik zit klem omdat docenten
+                            weigeren een online
+                            alternatief te bieden als ik
+                            niet fysiek aanwezig kan zijn
+                        </p>
 
-            <span class="story-role">Docent</span>
-          </div>
+                        <span class="story-role">Student</span>
+                    </div>
 
-          <div class="story-footer">
-            <div class="quote-mark quote-close">”</div>
-            <img src="../assets/IMG_8161.jpeg" alt="Portret docent" class="story-avatar">
-          </div>
-        </article>
+                    <div class="story-footer">
+                        <div class="quote-mark quote-close">”</div>
+                        <img src="../assets/IMG_4236.jpg" alt="Portret student" class="story-avatar">
+                    </div>
+                </article>
 
-        <article class="story-card yellow-card">
-          <div class="quote-mark quote-open">“</div>
+                <article class="story-card purple-card">
+                    <div class="quote-mark quote-open">“</div>
 
-          <div class="story-content">
-            <p>
-              Ik zit klem wanneer
-              duidelijke verwachtingen
-              ontbreken.
-            </p>
+                    <div class="story-content">
+                        <p>
+                            Het onderwijs zit klem
+                            omdat er altijd rekening
+                            moet worden gehouden met
+                            vaste regels.
+                        </p>
 
-            <span class="story-role">Student</span>
-          </div>
+                        <span class="story-role">Docent</span>
+                    </div>
 
-          <div class="story-footer">
-            <div class="quote-mark quote-close">”</div>
-            <img src="../assets/IMG_8241.jpeg" alt="Portret student" class="story-avatar">
-          </div>
-        </article>
-      </div>
-    </section>
+                    <div class="story-footer">
+                        <div class="quote-mark quote-close">”</div>
+                        <img src="../assets/IMG_8161.jpeg" alt="Portret docent" class="story-avatar">
+                    </div>
+                </article>
 
-    <!-- CTA -->
-    <section class="cta-banner">
-      <span class="cta-pink-circle"></span>
-      <span class="cta-green-dot"></span>
+                <article class="story-card yellow-card">
+                    <div class="quote-mark quote-open">“</div>
 
-      <div class="cta-text">
-        <h2>Check wat JIJ kan doen<br>voor toegankelijk onderwijs</h2>
-        <span class="pink-line"></span>
-      </div>
+                    <div class="story-content">
+                        <p>
+                            Ik zit klem wanneer
+                            duidelijke verwachtingen
+                            ontbreken.
+                        </p>
 
-      <div class="cta-icon">
-        <img src="../assets/brein.png" alt="Brein illustratie">
-      </div>
+                        <span class="story-role">Student</span>
+                    </div>
 
-      <a href="#" class="button button-yellow cta-button">
-        Hoe kan ik helpen? <span>→</span>
-      </a>
-    </section>
-  </main>
+                    <div class="story-footer">
+                        <div class="quote-mark quote-close">”</div>
+                        <img src="../assets/IMG_8241.jpeg" alt="Portret student" class="story-avatar">
+                    </div>
+                </article>
+            </div>
+        </section>
 
-  <script src="script.js"></script>
+
+        <section class="cta-banner">
+            <span class="cta-pink-circle"></span>
+            <span class="cta-green-dot"></span>
+
+            <div class="cta-text">
+                <h2>Check wat JIJ kan doen<br>voor toegankelijk onderwijs</h2>
+                <span class="pink-line"></span>
+            </div>
+
+            <div class="cta-icon">
+                <img src="../assets/brein.png" alt="Brein illustratie">
+            </div>
+
+            <a href="../html/resources.html" class="button button-yellow cta-button">
+                Hoe kan ik helpen? <span>→</span>
+            </a>
+        </section>
+    </main>
+
+   
 </body>
+
 </html>
